@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-base {
-	background-color: #d3dbf1;
+body {
+	background-color: #e0e6f5;
 }
