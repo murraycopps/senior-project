@@ -22,18 +22,17 @@
 	<ul class="flex flex-col gap-16 items-center relative pb-32">
 		{#each paragraphs as paragraph}
 			{#if paragraph.includes('[title]')}
-				<h3 class="text-3xl text-center font-bold">{paragraph.replace('[title]', '')}</h3>
+				<h3 class="text-4xl text-center font-bold my-8">{paragraph.replace('[title]', '')}</h3>
 			{:else if paragraph.includes('[quote]')}
 				<QuoteCard text={paragraph.replace('[quote]', '')} />
 			{:else}
-				<p class="text-xl indent-12">{paragraph}</p>
+				<p class="text-xl indent-12 leading-10 {paragraph.includes('[top]') && "mb-12"}">{paragraph.replace('[top]', '')}</p>
 			{/if}
 		{/each}
 	</ul>
 </div>
 
 <style>
-	/* style the divs scrollbar */
 	div::-webkit-scrollbar {
 		width: 0.5rem;
 	}
@@ -47,6 +46,7 @@
     }
 	.short {
 		padding-top: 50vh;
+		padding-top: 50svh;
 	}
 	.tall {
 		padding-top: 100vh;
