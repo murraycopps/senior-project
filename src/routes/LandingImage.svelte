@@ -15,7 +15,7 @@
 
 <img src={LandingImage} alt="" class="{isTall ? 'tall' : 'short'} z-50 {loading && "loading"}"  />
 
-<div class="{isTall ? 'tall' : 'short'} text-gray-200 z-50">
+<div class="{isTall ? 'tall' : 'short'} text-light-base z-50">
 	<h1 class="{isTall ? 'text-8xl' : 'text-4xl'} text-center font-bold">The Rise of Super Shoes</h1>
 	<h2 class="{isTall ? 'text-3xl' : 'text-xl'} text-center font-bold">
 		Are They Necessary for Athletes to Compete at the World Stage?
@@ -26,7 +26,7 @@
 		? 'opacity-0 off-screen-right'
 		: 'opacity-100'}"
 >
-	<h3 class="text-2xl text-center text-gray-200 z-50">By: Murray Copps</h3>
+	<h3 class="z-50 text-2xl text-center text-light-base">By: Murray Copps</h3>
 </div>
 
 <style>
@@ -54,7 +54,7 @@
 
 	@keyframes toTall {
 		0% {
-			transform: scaleX(1.1) scaleY(0.5);
+			transform: scaleX(1.1) scaleY(0.4);
 			bottom: 80vh;
 		}
 		100% {
@@ -69,7 +69,7 @@
             bottom: 15vh;
         }
         100% {
-            transform: scaleX(1.1) scaleY(0.5);
+            transform: scaleX(1.1) scaleY(0.4);
             bottom: 80vh;
         }
     }

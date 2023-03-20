@@ -4,7 +4,11 @@ module.exports = {
     './src/routes/**/*.svelte',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'light-base': '#e0e6f5',
+      }
+    },
   },
   plugins: [],
 }

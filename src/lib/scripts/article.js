@@ -21,7 +21,7 @@ The most harm these shoes can do is with the discrepancies between companies. So
  "If the best are willing to take $0 from a shoe sponsor because they feel they need VF [i.e., the Vaporfly, the Alphafly's predecessor] to be competitive, why would Nike pay them? And what can the next tier possibly ask for?" Des Linden winner of Boston 2018 [quote]
 
 "It's actually taking away opportunity, because unless the one company that works best for you thinks you are a perfect match you may never be sponsored." two-time Olympian Kara Goucher [quote]
-"When somebody does a great performance now, everybody will question if it's the shoe, and that is the credibility problem." Karsten Warholm 400 hurdle world record holder [quote]
+"When somebody does a great performance now, everybody will question if it's the shoe, and that is the credibility problem." Karsten Warholm 400 hurdle world record holder [side]
 
 
 The Tokyo Olympic 400-meter hurdles were an impressive race where Warholm improved his record by .76 seconds, an incredible margin in such a short event, and three of the finishers broke his previous record. After the race, he spoke out about the shoes of the second-place runner and complained about how they impacted his performance despite wearing super shoes, although worse as he was sponsored by Puma instead of Nike. He later went on to say how he doesn't know which shoes are better.

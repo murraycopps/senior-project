@@ -1,0 +1,38 @@
+<script>
+	export let text = '';
+</script>
+
+<div class="relative flex flex-col items-center {text.includes('[right]') ? "float-right ml-16 mr-2" : "float-left  mr-16 ml-2"} gap-4 p-4 text-light-base rounded-2xl">
+		<p class="text-2xl font-bold text-center quote">{text.split('"')[1]}</p>
+		<p class="text-xl font-bold text-center">{text.replace('[quote]', '').replace('[right]', '').split('"')[2]}</p>
+</div>
+
+<style>
+	div {
+		width: clamp(200px, 25vw, 500px);
+        background-color: #051A4F;
+        /* background-color: #132f75; */
+	}
+	.quote {
+		font-style: italic;
+	}
+	.quote::before {
+		content: open-quote;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 3rem;
+		vertical-align: middle;
+		position: relative;
+		left: -0.3rem;
+	}
+	.quote::after {
+		content: close-quote;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 3rem;
+		vertical-align: middle;
+		position: relative;
+		right: -0.3rem;
+	}
+	.top {
+		margin-bottom: 10rem;
+	}
+</style>

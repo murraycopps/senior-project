@@ -4,8 +4,8 @@
 </script>
 
 <div class="flex flex-col gap-4 items-center {top ? "top" : "side"}">
-	<p class="text-2xl text-center font-bold quote">{text.split('"')[1]}</p>
-	<p class="text-xl text-center font-bold">{text.replace('[top]', '').split('"')[2]}</p>
+	<p class="text-2xl font-bold text-center quote">{text.split('"')[1]}</p>
+	<p class="text-xl font-bold text-center">{text.replace('[top]', '').split('"')[2]}</p>
 </div>
 
 <style>
@@ -15,6 +15,11 @@
         transform: translateX(-50%);
         width: clamp(200px, 25vw, 500px);
     } */
+
+    div{
+		width: clamp(500px, 75vw, 1000px);
+
+    }
 	.quote {
 		font-style: italic;
 	}
