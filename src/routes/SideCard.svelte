@@ -2,14 +2,14 @@
 	export let text = '';
 </script>
 
-<div class="relative flex flex-col items-center {text.includes('[right]') ? "float-right ml-16 mr-2" : "float-left  mr-16 ml-2"} gap-4 p-4 text-light-base rounded-2xl">
+<div class="relative -mb-3 flex  flex-col mt-3 items-center {text.includes('[right]') ? "float-right ml-12 mr-2" : "float-left  mr-12 ml-2"} gap-4 p-4 text-light-base rounded-2xl">
 		<p class="text-2xl font-bold text-center quote">{text.split('"')[1]}</p>
 		<p class="text-xl font-bold text-center">{text.replace('[quote]', '').replace('[right]', '').split('"')[2]}</p>
 </div>
 
 <style>
 	div {
-		width: clamp(200px, 25vw, 500px);
+		width: clamp(400px, 33vw, 800px);
         background-color: #051A4F;
         /* background-color: #132f75; */
 	}
