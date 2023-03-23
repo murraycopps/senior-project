@@ -15,6 +15,9 @@
 </div>
 <a href="/" class="absolute px-8 py-4 text-3xl rounded-lg top-2 left-2 bg-mid-base hover:bg-dark-base text-light-base">Home</a>
 <style>
+    a{
+		transition: background-color 0.3s ease-in-out;
+	}
     li{
         transition: transform 0.3s ease-in-out;
         transform-origin: -1rem 50%;

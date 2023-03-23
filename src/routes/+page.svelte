@@ -12,21 +12,19 @@
 	let isScrolling = false;
 
 	const scrolling = () => {
-			isScrolling = false;
-		}
-	
-		
+		isScrolling = false;
+	};
 
 	const handleScroll = (e) => {
 		isTall = e.target.scrollTop === 0;
-		if( isScrolling ){
-			clearTimeout( scrolling );
+		if (isScrolling) {
+			clearTimeout(scrolling);
 		}
 		isScrolling = true;
-		setTimeout( scrolling, 100 );
+		setTimeout(scrolling, 100);
 	};
-	
 </script>
+
 <title>Super Shoes</title>
 
 <div
@@ -42,33 +40,45 @@
 				<h3 class="my-8 text-4xl font-bold text-center">{paragraph.replace('[title]', '')}</h3>
 			{:else if paragraph.includes('[data]')}
 				<div class="flex flex-col items-center gap-16 my-16">
-					<h3 class="text-4xl font-bold text-center">Estimated change in race time, compared with a previous result, when switching shoes</h3>
+					<h3 class="text-4xl font-bold text-center">
+						Estimated change in race time, compared with a previous result, when switching shoes
+					</h3>
 					<div class="w-11/12 p-8 bg-white rounded-3xl">
 						<img src={DataImage} alt="Data" />
 					</div>
 				</div>
-				{:else if paragraph.includes('[image]')}
-					<div class="flex flex-col items-center justify-center w-full gap-2">
-						<img src={paragraph.match(/\{(.*?)\}/)[1]} alt="" class="w-3/4 rounded-3xl" />
-						<p class="text-2xl text-center">{paragraph.replace(paragraph.match(/\{(.*?)\}/)[0], '').replace('[image]', '')}</p>
-					</div>
+			{:else if paragraph.includes('[image]')}
+				<div class="flex flex-col items-center justify-center w-full gap-2">
+					<img src={paragraph.match(/\{(.*?)\}/)[1]} alt="" class="w-3/4 rounded-3xl" />
+					<p class="text-2xl text-center">
+						{paragraph.replace(paragraph.match(/\{(.*?)\}/)[0], '').replace('[image]', '')}
+					</p>
+				</div>
 			{:else if paragraph.includes('[quote]')}
 				<QuoteCard text={paragraph.replace('[quote]', '')} />
 			{:else if !paragraph.includes('[side]') && !paragraph.includes('[shoelist]')}
 				{#if i > 0 && paragraphs[i - 1].includes('[side]')}
-					<div class="side-container {paragraphs[i - 1].includes('[right]') ? "padding-left" : "padding-right"}">
+					<div
+						class="side-container {paragraphs[i - 1].includes('[right]')
+							? 'padding-left'
+							: 'padding-right'}"
+					>
 						<SideCard text={paragraphs[i - 1].replace('[side]', '')} moving={isScrolling} />
-						<p class="text-xl indent-12 leading-10 {paragraphs[i - 1].includes('[right]') ? "padding-right" : "padding-left"} {paragraph.includes('[top]') && 'mb-12'}">
+						<p
+							class="text-xl indent-12 leading-10 {paragraphs[i - 1].includes('[right]')
+								? 'padding-right'
+								: 'padding-left'} {paragraph.includes('[top]') && 'mb-12'}"
+						>
 							{paragraph.replace('[top]', '')}
 						</p>
 					</div>
 				{:else if i > 0 && paragraphs[i - 1].includes('[shoelist]')}
-				<div class="side-container padding-right">
-					<ShoeList />
-					<p class="text-xl leading-10 indent-12 padding-left">
-						{paragraph.replace('[top]', '')}
-					</p>
-				</div>
+					<div class="side-container padding-right">
+						<ShoeList />
+						<p class="text-xl leading-10 indent-12 padding-left">
+							{paragraph.replace('[top]', '')}
+						</p>
+					</div>
 				{:else}
 					<p class="text-xl indent-12 leading-10 {paragraph.includes('[top]') && 'mb-12'}">
 						{paragraph.replace('[top]', '')}
@@ -76,10 +86,33 @@
 				{/if}
 			{/if}
 		{/each}
+		<div class="grid w-3/4 grid-cols-3 gap-4 text-2xl">
+			<a
+				href="/works-sited"
+				class="flex flex-col items-center justify-center gap-4 p-8 text-light-base bg-mid-base hover:bg-dark-base rounded-3xl"
+			>
+				Works Sited
+			</a>
+			<a
+				href="/images-sited"
+				class="flex flex-col items-center justify-center gap-4 p-8 text-light-base bg-mid-base hover:bg-dark-base rounded-3xl"
+			>
+				Images Sited
+			</a>
+			<a
+				href="/key-questions"
+				class="flex flex-col items-center justify-center gap-4 p-8 text-light-base bg-mid-base hover:bg-dark-base rounded-3xl"
+			>
+				Key Questions
+			</a>
+		</div>
 	</ul>
 </div>
 
 <style>
+	a{
+		transition: background-color 0.3s ease-in-out;
+	}
 	div::-webkit-scrollbar {
 		width: 0.5rem;
 	}
@@ -104,12 +137,11 @@
 		width: 100%;
 	}
 
-	.padding-left{
+	.padding-left {
 		padding-left: var(--padding);
 	}
 
-	.padding-right{
+	.padding-right {
 		padding-right: var(--padding);
-
 	}
 </style>

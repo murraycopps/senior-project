@@ -4,12 +4,22 @@
     export let moving = false;
 </script>
 
-
-    <img src={Shoe2} alt="moving shoe" class="absolute bottom-full first" style="--animation-state: {moving ? "running" : "paused"}" >
-    <img src={Shoe} alt="moving shoe" class="absolute bottom-full second" style="--animation-state: {moving ? "running" : "paused"}"/>
-
+<div>
+    <img src={Shoe2} alt="moving shoe" class="absolute bottom-0 first" style="--animation-state: {moving ? "running" : "paused"}" >
+    <img src={Shoe} alt="moving shoe" class="absolute bottom-0 second" style="--animation-state: {moving ? "running" : "paused"}"/>
+</div>
 
 <style>
+    div{
+        width: clamp(400px,33vw,800px);
+        height: 10rem;
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+    }
+    div:hover > img {
+        animation-play-state: running;
+    }
 
     .first {
         left: calc(50% - 2rem);
