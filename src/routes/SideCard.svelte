@@ -1,10 +1,16 @@
 <script>
+	import MovingShoes from "./MovingShoes.svelte";
+
 	export let text = '';
+	export let moving = false;
 </script>
 
-<div class="relative -mb-3 flex  flex-col mt-3 items-center {text.includes('[right]') ? "float-right ml-12 mr-2" : "float-left  mr-12 ml-2"} gap-4 p-4 text-light-base rounded-2xl">
-		<p class="text-2xl font-bold text-center quote">{text.split('"')[1]}</p>
-		<p class="text-xl font-bold text-center">{text.replace('[quote]', '').replace('[right]', '').split('"')[2]}</p>
+<div class="relative -mb-3 flex  flex-col mt-3 items-center {text.includes('[right]') ? "float-right ml-12 mr-2" : "float-left  mr-12 ml-2"} p-4 text-light-base rounded-2xl">
+	{#if text.includes('[shoes]')}
+		<MovingShoes {moving} />
+	{/if}
+	<p class="mb-4 text-2xl font-bold text-center quote">{text.split('"')[1]}</p>
+		<p class="text-xl font-bold text-center">{text.replace('[quote]', '').replace('[right]', '').replace('[shoes]', '').split('"')[2]}</p>
 </div>
 
 <style>
@@ -31,8 +37,5 @@
 		vertical-align: middle;
 		position: relative;
 		right: -0.3rem;
-	}
-	.top {
-		margin-bottom: 10rem;
 	}
 </style>

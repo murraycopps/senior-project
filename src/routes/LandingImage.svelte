@@ -55,7 +55,7 @@
 	@keyframes toTall {
 		0% {
 			transform: scaleX(1.1) scaleY(0.4);
-			bottom: 80vh;
+			bottom: 82vh;
 		}
 		100% {
 			transform: scaleX(1.1) scaleY(1);
@@ -70,7 +70,7 @@
         }
         100% {
             transform: scaleX(1.1) scaleY(0.4);
-            bottom: 80vh;
+            bottom: 82vh;
         }
     }
 	div {
@@ -93,7 +93,7 @@
 	div.short {
 		top: 1rem;
 		left: 2rem;
-		gap: 2rem;
+		gap: 1rem;
 		max-height: 25vh;
 	}
 
