@@ -1,10 +1,11 @@
 <script>
     import Shoe from "$lib/images/shoe.png";
+    import Shoe2 from "$lib/images/shoe2.png";
     export let moving = false;
 </script>
 
 
-    <img src={Shoe} alt="moving shoe" class="absolute bottom-full first" style="--animation-state: {moving ? "running" : "paused"}" >
+    <img src={Shoe2} alt="moving shoe" class="absolute bottom-full first" style="--animation-state: {moving ? "running" : "paused"}" >
     <img src={Shoe} alt="moving shoe" class="absolute bottom-full second" style="--animation-state: {moving ? "running" : "paused"}"/>
 
 
@@ -32,6 +33,9 @@
         0%{
             transform: rotate(0deg) translateY(0.5rem) translateX(0rem);
         }
+        5% {
+            transform: rotate(-10deg) translateY(0.2rem) translateX(-0.4rem);
+        }
         25%{
             transform: rotate(-30deg) translateY(-3rem) translateX(-2rem);
         }
@@ -58,6 +62,9 @@
         }
         50% {
             transform: rotate(0deg) translateY(0.5rem) translateX(0rem) scale(1.05);
+        }
+        55% {
+            transform: rotate(-10deg) translateY(0.2rem) translateX(-0.4rem) scale(1.05);
         }
         75%{
             transform: rotate(-30deg) translateY(-3rem) translateX(-2rem) scale(1.05);
