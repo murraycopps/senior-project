@@ -14,15 +14,14 @@
     .first {
         left: calc(50% - 2rem);
         transform-origin: 0% 100%;
-        animation: walk 2s linear infinite ;
+        animation: walk 2s linear infinite;
         animation-play-state: var(--animation-state);
 
     }
     .second {
         left: calc(50% - 2rem);
         transform-origin: 0% 100%;
-        /* animation: first 0.8s ease-in-out infinite alternate-reverse; */
-        animation: otherWalk 2s linear infinite ;
+        animation: otherWalk 2s linear infinite;
         animation-play-state: var(--animation-state);
     }
     img {

@@ -21,7 +21,7 @@ While it is obvious that improvements to shoes will threaten records, this has a
 
 Sponsorships [title]
 
-"If the best are willing to take $0 from a shoe sponsor because they feel they need VF [i.e., the Vaporfly, the Alphafly's predecessor] to be competitive, why would Nike pay them? And what can the next tier possibly ask for?" Des Linden winner of Boston 2018 [side][right][shoes]
+"If the best are willing to take $0 from a shoe sponsor because they feel they need VF [i.e., the Vaporfly, the Alphafly's predecessor] to be competitive, why would Nike pay them? And what can the next tier possibly ask for?" Des Linden winner of the Boston marathon 2018 [side][right][shoes]
 
 The biggest problem with these shoes is the inequality among shoe companies. Some companies produce superior shoes, which puts many athletes in a difficult position. They are left with a choice between accepting good deals that limit their performance due to inferior shoes or taking a risk and accepting a worse deal, or no deal at all, to gain access to the best shoes. This issue is mainly caused by Nike's practice of underpaying most of its athletes, leaving many other athletes with no sponsorship deals if they want to remain competitive. In fact, the fastest U.S. athletes in the men's and women's races at last year's Boston Marathon had recently terminated their sponsorship deals and competed with the fastest shoe on the market, the Nike Alphafly.
 
