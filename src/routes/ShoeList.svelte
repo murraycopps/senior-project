@@ -1,7 +1,7 @@
 <script>
 	const shoes = [
 		{
-			distance: 'Track',
+			distance: 'Track Distance',
 			shoes: [
 				{ shoe: 'ZoomX Dragonfly', brand: 'nike' },
 				{ shoe: 'Air Zoom Victory', brand: 'nike' },
