@@ -82,7 +82,7 @@
             transform: rotate(-25deg) translateY(-2.5rem) translateX(-4rem) scale(1.05);
         }
         100% {
-            transform: rotate(-5deg) translateY(0.2rem) translateX(-10rem) scale(1.05);
+            transform: rotate(-10deg) translateY(0.2rem) translateX(-10rem) scale(1.05);
 
         }
     }
