@@ -187,10 +187,10 @@
 	}
 
 	.left {
-		animation: left 1s;
+		animation: left 1s ease-in-out;
 	}
 	.right {
-		animation: right 1s;
+		animation: right 1s ease-in-out;
 	}
 
 	@keyframes left {

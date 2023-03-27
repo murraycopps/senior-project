@@ -7,11 +7,11 @@
 
  <div class="flex flex-col items-center w-screen h-screen gap-4 p-4 justify-evenly">
 	<h1 class="text-4xl text-center">Images Cited</h1>
-	<ul class="flex flex-col gap-4 px-16 text-xl">
+	<ul class="flex flex-col gap-4 px-16 text-xl text-blue-600">
         {#each images as image}
-            <li>{image}</li>
+            <a href={image}>{image}</a>
         {/each}
-        <li>https://www.nytimes.com/interactive/2019/12/13/upshot/nike-vaporfly-next-percent-shoe-estimates.html</li>
+        <a href="https://www.nytimes.com/interactive/2019/12/13/upshot/nike-vaporfly-next-percent-shoe-estimates.html#method-3">https://www.nytimes.com/interactive/2019/12/13/upshot/nike-vaporfly-next-percent-shoe-estimates.html</a>
 	</ul>
 </div>
 <a
