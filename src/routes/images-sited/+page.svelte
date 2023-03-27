@@ -7,7 +7,7 @@
 
  <div class="flex flex-col items-center w-screen h-screen gap-4 p-4 justify-evenly">
 	<h1 class="text-4xl text-center">Images Cited</h1>
-	<ul class="flex flex-col gap-4 px-16 text-xl text-blue-600">
+	<ul class="flex flex-col gap-4 px-16 text-xl child:text-blue-600 child-hover:text-blue-700">
         {#each images as image}
             <a href={image}>{image}</a>
         {/each}
