@@ -1,3 +1,5 @@
+<title>Key Questions</title>
+
 <div class="flex flex-col items-center w-screen h-screen gap-4 p-4 justify-evenly">
     <h1 class="text-5xl text-bold">How do modern running shoes impact athletics</h1>
 	<ul class="flex flex-col gap-3 text-3xl list-disc">

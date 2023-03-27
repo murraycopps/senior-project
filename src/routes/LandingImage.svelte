@@ -1,5 +1,5 @@
 <script>
-	import LandingImage from '$lib/images/landing-image3.svg';
+	import LandingImage from '$lib/images/landing-image.svg';
 	import { onMount } from 'svelte';
 
 	export let isTall = true;
